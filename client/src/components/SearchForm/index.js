@@ -3,9 +3,12 @@ import React from "react";
 const SearchForm = props => {
   return (
     <form>
-      <div className="form-group" style={{ textAlign: "center" }}>
+      <div
+        className="form-inline"
+        style={{ textAlign: "center", marginBottom: "30px" }}
+      >
         <input
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "center", width: "93%" }}
           onChange={props.handleInputChange}
           value={props.value}
           name="search"
@@ -14,7 +17,6 @@ const SearchForm = props => {
           placeholder="Search for a Book, Author, or Topic"
           id="search"
         />
-        <br />
         <button onClick={props.handleFormSubmit} className="btn btn-primary">
           Search
         </button>
