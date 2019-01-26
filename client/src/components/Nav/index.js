@@ -26,7 +26,7 @@ const Nav = props => (
             href="/savedbooks"
             style={{ color: "white", textDecoration: "none", fontSize: "16px" }}
           >
-            Saved Books
+            <button className="btn btn-dark">Saved Books</button>
           </a>
         </li>
       </ul>
