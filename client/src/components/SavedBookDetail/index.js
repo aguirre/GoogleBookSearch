@@ -27,7 +27,7 @@ const SavedBookDetail = props => {
         </p>
         <button
           onClick={props.handleDeleteBook}
-          className="btn btn-dark delete-btn"
+          className="btn btn-danger delete-btn"
           style={{ marginBottom: "30px" }}
         >
           Delete Book
