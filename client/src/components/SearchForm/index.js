@@ -8,7 +8,7 @@ const SearchForm = props => {
         style={{ textAlign: "center", marginBottom: "30px" }}
       >
         <input
-          style={{ textAlign: "center", width: "93%" }}
+          style={{ width: "93%" }}
           onChange={props.handleInputChange}
           value={props.value}
           name="search"
@@ -17,8 +17,12 @@ const SearchForm = props => {
           placeholder="Search for a Book, Author, or Topic"
           id="search"
         />
-        <button onClick={props.handleFormSubmit} className="btn btn-primary">
-          Search
+        <button
+          onClick={props.handleFormSubmit}
+          style={{ width: "7%" }}
+          className="btn btn-primary"
+        >
+          <i className="fas fa-search" />
         </button>
       </div>
     </form>
