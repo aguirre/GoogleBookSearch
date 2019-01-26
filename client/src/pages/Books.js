@@ -63,13 +63,11 @@ class Books extends Component {
         </Row>
         <Row>
           <Col size="md-12">
-            <Card heading="Search Google Books">
-              <SearchForm
-                value={this.state.search}
-                handleInputChange={this.handleInputChange}
-                handleFormSubmit={this.handleFormSubmit}
-              />
-            </Card>
+            <SearchForm
+              value={this.state.search}
+              handleInputChange={this.handleInputChange}
+              handleFormSubmit={this.handleFormSubmit}
+            />
           </Col>
         </Row>
         <Row>
